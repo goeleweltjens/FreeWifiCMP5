@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "schoolproject",
   "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,8 +19,5 @@
   "bugs": {
     "url": "https://github.com/goeleweltjens/FreeWifiCMP5/issues"
   },
-  "homepage": "https://github.com/goeleweltjens/FreeWifiCMP5#readme",
-  "dependencies": {
-    "express": "^4.17.1"
-  }
+  "homepage": "https://github.com/goeleweltjens/FreeWifiCMP5#readme"
 }
