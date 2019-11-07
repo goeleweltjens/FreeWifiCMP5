@@ -43,7 +43,7 @@ request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_pu
     data_wifi = data_wifi.features;
 
     for(var i=0; i < data_wifi.length; i++) {
-        console.log("naam: " + data_wifi[i].attributes.naam);
+        console.log("naam: " + data_wifi[i].attributes.LOCATIE);
 
     }
 
