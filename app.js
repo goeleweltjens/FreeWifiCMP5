@@ -30,11 +30,20 @@ app.get('/data',(req,res) => {
   res.render('data');
   });
 
+  app.get('/help',(req,res) => {
+    res.render('help');
+    });
+
+  app.get('/locaties',(req,res) => {
+    res.render('locaties');
+    });
+
 app.listen(3000, function() {
   console.log('Node luistert op poort 3000');
 });
 
 console.log("Webserver draait");
+
 
 
 request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_publiek1/MapServer/60/query?where=1%3D1&outFields=*&outSR=4326&f=json',
