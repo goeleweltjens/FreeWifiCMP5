@@ -21,20 +21,10 @@ var pin = L.icon({
 });
 
 
-var marker = L.marker([50.8951415, 4.3419077], {icon: pin}).addTo(mymap);
-
-var marker = L.marker([51.2199687, 4.4016123], {icon: pin}).addTo(mymap);
-
-
-var polygon = L.polygon([
-	[50.8951415, 4.3419077],
-	[51.2199687, 4.4016123],
-]).addTo(mymap);
-
-
-polygon.setStyle({color: 'green'});
 
 
 
-mymap.fitWorld();
-mymap.locate({setView: true, maxZoom: 15});
+
+
+
+mymap.locate({setView: true, maxZoom: 17});

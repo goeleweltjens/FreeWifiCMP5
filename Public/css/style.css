@@ -3,11 +3,13 @@ html {
 }
 body {
   font-family: sans-serif;
+  margin: 20px;
+  width: 100%;
 }
 
 
 * {margin: 0; padding: 0;}
 #mapje {
-  width: 100vw;
+  width: 950px;
   height: 100vh;
 }
