@@ -54,6 +54,10 @@ request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_pu
     for(var i=0; i < data_wifi.length; i++) {
         console.log("naam: " + data_wifi[i].attributes.LOCATIE);
         console.log("naam: " + data_wifi[i].geometry.x);
+        console.log("naam: " + data_wifi[i].attributes.STRAAT);
+        console.log("naam: " + data_wifi[i].attributes.HUISNR);
+
+
     }
 
   }
