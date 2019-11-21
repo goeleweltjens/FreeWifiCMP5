@@ -5,4 +5,14 @@
 <p> hallo </p>
 
 
-</body>
+<div id="mapje"></div>
+<script src="leaflet/leaflet.js"></script>
+<script src="leaflet/leaflet-providers.js"></script>
+<script src="js/script.js"></script>
+<script>
+  <% for(var i=0; i < wifi.length; i++){ %>
+      L.marker([<%=wifi[i].geometry.y %>, <%=wifi[i].geometry.x %>]).addTo(mymap);
+  <% }%>
+</script>
+
+<% include footer %>
