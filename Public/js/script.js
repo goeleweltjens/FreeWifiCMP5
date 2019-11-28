@@ -16,21 +16,48 @@ basicmap.addTo(mymap);
 
 var pinDefault = L.icon({
     iconUrl: '../images/grijs.png',
-    iconSize:     [30,45],
+    iconSize:     [17,30],
 });
 var pinRed = L.icon({
     iconUrl: '../images/rood.png',
-    iconSize:     [30,45],
+    iconSize:     [17,30],
 });
 var pinYellow = L.icon({
     iconUrl: '../images/geel.png',
-    iconSize:     [30,45],
+    iconSize:     [17,30],
 });
 var pinBlue = L.icon({
     iconUrl: '../images/blauw.png',
-    iconSize:     [30,45],
+    iconSize:     [17,30],
+});
+var pinBordeaux = L.icon({
+    iconUrl: '../images/bordeaux.png',
+    iconSize:     [17,30],
 });
 
+var pinKaki = L.icon({
+    iconUrl: '../images/kaki.png',
+    iconSize:     [17,30],
+});
+
+var pinLila = L.icon({
+    iconUrl: '../images/lila.png',
+    iconSize:     [17,30],
+});
+
+var pinOrange = L.icon({
+    iconUrl: '../images/oranje.png',
+    iconSize:     [17,30],
+});
+
+var pinPurple = L.icon({
+    iconUrl: '../images/paars.png',
+    iconSize:     [17,30],
+});
+var pinGreen = L.icon({
+    iconUrl: '../images/groen.png',
+    iconSize:     [17,30],
+});
 
 
 

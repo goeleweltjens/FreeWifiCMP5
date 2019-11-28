@@ -15,14 +15,32 @@
     //  L.marker([<%=wifi[i].geometry.y %>, <%=wifi[i].geometry.x %>]).addTo(mymap);
       // dit is voor het adres in de pop up weer te geven
       var pin = pinDefault;
-      if("<%=wifi[i].attributes.GEMEENTE %>" == "Merksem") {
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Antwerpen") {
         pin = pinRed;
       }
       if("<%=wifi[i].attributes.GEMEENTE %>" == "Berchem") {
         pin = pinBlue;
       }
-      if("<%=wifi[i].attributes.GEMEENTE %>" == "Ekeren") {
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Deurne") {
         pin = pinYellow;
+      }
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Ekeren") {
+        pin = pinBordeaux;
+      }
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Merksem") {
+        pin = pinGreen;
+      }
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Berendrecht") {
+        pin = pinKaki;
+      }
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Wilrijk") {
+        pin = pinLila;
+      }
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Hoboken") {
+        pin = pinOrange;
+      }
+      if("<%=wifi[i].attributes.GEMEENTE %>" == "Borgerhout") {
+        pin = pinPurple;
       }
 
 
