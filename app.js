@@ -42,6 +42,16 @@ app.get('/data',(req,res) => {
       res.render('help');
       });
 
+
+    app.get('/navigatie',(req,res) => {
+      res.render('navigatie');
+      });
+
+
+    app.get('/account',(req,res) => {
+      res.render('account');
+        });
+
 app.listen(3000, function() {
   console.log('Node luistert op poort 3000');
 });

@@ -14,12 +14,22 @@ var basicmap = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png
 });
 basicmap.addTo(mymap);
 
-
-var pin = L.icon({
-    iconUrl: 'images/pin.png',
+var pinDefault = L.icon({
+    iconUrl: '../images/grijs.png',
     iconSize:     [30,45],
 });
-
+var pinRed = L.icon({
+    iconUrl: '../images/rood.png',
+    iconSize:     [30,45],
+});
+var pinYellow = L.icon({
+    iconUrl: '../images/geel.png',
+    iconSize:     [30,45],
+});
+var pinBlue = L.icon({
+    iconUrl: '../images/blauw.png',
+    iconSize:     [30,45],
+});
 
 
 
