@@ -38,6 +38,10 @@ app.get('/data',(req,res) => {
     res.render('locaties');
     });
 
+    app.get('/help',(req,res) => {
+      res.render('help');
+      });
+
 app.listen(3000, function() {
   console.log('Node luistert op poort 3000');
 });
@@ -56,6 +60,8 @@ request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_pu
         console.log("naam: " + data_wifi[i].geometry.x);
         console.log("naam: " + data_wifi[i].attributes.STRAAT);
         console.log("naam: " + data_wifi[i].attributes.HUISNR);
+        console.log("naam: " + data_wifi[i].attributes.GEMEENTE);
+
 
 
     }

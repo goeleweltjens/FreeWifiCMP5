@@ -11,7 +11,12 @@
 <script src="js/script.js"></script>
 <script>
   <% for(var i=0; i < wifi.length; i++){ %>
+    //dit heeft Sven gedaan, zijn de markers voor alle plaatsen
       L.marker([<%=wifi[i].geometry.y %>, <%=wifi[i].geometry.x %>]).addTo(mymap);
+      // dit is voor het adres in de pop up weer te geven
+      L.marker([<%=wifi[i].geometry.y %>, <%=wifi[i].geometry.x %>]).addTo(mymap)
+    .bindPopup('<%=wifi[i].attributes.STRAAT %>, <%=wifi[i].attributes.HUISNR,  %>, <%=wifi[i].attributes.GEMEENTE %>')
+    .openPopup();
 
 
   <% }%>
