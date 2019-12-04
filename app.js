@@ -56,7 +56,9 @@ app.get('/data',(req,res) => {
           });
 
         app.get('/categorie',(req,res) => {
-          res.render('categorie');
+          res.render('categorie',{
+            wifi: data_wifi
+          });
             });
 
 
