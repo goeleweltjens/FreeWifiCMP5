@@ -38,8 +38,8 @@ app.get('/data',(req,res) => {
     res.render('locaties');
     });
 
-    app.get('/help',(req,res) => {
-      res.render('help');
+    app.get('/instellingen',(req,res) => {
+      res.render('instellingen');
       });
 
 
@@ -47,10 +47,24 @@ app.get('/data',(req,res) => {
       res.render('navigatie');
       });
 
+      app.get('/aanmelden',(req,res) => {
+        res.render('aanmelden');
+        });
+
+        app.get('/aanmeldformulier',(req,res) => {
+          res.render('aanmeldformulier');
+          });
+
+        app.get('/categorie',(req,res) => {
+          res.render('categorie');
+            });
+
+
 
     app.get('/account',(req,res) => {
       res.render('account');
         });
+
 
 app.listen(3000, function() {
   console.log('Node luistert op poort 3000');
