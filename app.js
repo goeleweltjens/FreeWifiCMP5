@@ -35,8 +35,10 @@ app.get('/data',(req,res) => {
     });
 
   app.get('/locaties',(req,res) => {
-    res.render('locaties');
+    res.render('locaties',{
+      wifi: data_wifi
     });
+      });
 
     app.get('/instellingen',(req,res) => {
       res.render('instellingen');

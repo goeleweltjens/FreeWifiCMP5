@@ -3,6 +3,13 @@
 
 
 <!-- aanpassing om lijst internetspots te tonen -->
-  <%for(var i=0; i < parken.length; i++) {%>
-    naam; <%=parken[i].attributes.naam%>
+  <%for(var i=0; i < wifi.length; i++) {%>
+     <%=wifi[i].attributes.LOCATIE%>
+     <%=wifi[i].attributes.STRAAT%>
+     <%=wifi[i].attributes.HUISNR%>
+     <%=wifi[i].attributes.POSTCODE%>
+     <%=wifi[i].attributes.GEMEENTE%>
+
+
+
   <%}%>
