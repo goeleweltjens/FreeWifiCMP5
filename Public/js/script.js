@@ -61,8 +61,4 @@ var pinGreen = L.icon({
 });
 
 
-
-
-
-
-mymap.locate({setView: true, maxZoom: 17});
+mymap.locate({setView: true, maxZoom: 17} );

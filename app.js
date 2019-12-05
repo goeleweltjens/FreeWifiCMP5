@@ -21,6 +21,12 @@ app.use(express.static('public'));
 let data_wifi;
 
 app.get('/',function(req,res){
+  res.render('aanmelden',{
+    wifi: data_wifi
+  });
+});
+
+app.get('/home',(req,res) => {
   res.render('home',{
     wifi: data_wifi
   });

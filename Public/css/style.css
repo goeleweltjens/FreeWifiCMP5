@@ -94,6 +94,9 @@ img.logo{
   margin-right: auto;
 }
 
+li {
+  list-style: none;
+}
 
 h2{
   color:#DC143C;
