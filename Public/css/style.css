@@ -13,8 +13,9 @@ body {
 
 * {margin: 0; padding: 0;}
 #mapje {
-  width: 950px;
-  height: 100vh;
+  width: 100%;
+  height: 150vw;
+  margin-top: 10vh;
 }
 
 nav div{
