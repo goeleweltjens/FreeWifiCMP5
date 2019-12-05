@@ -58,6 +58,27 @@ nav a{
   color: #DC143C;
 }
 
+#naam {
+  padding: 2vh;
+  width: 50vw;
+  background-color: white;
+  border-radius: 100px;
+  color:#DC143C;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 3vh;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70vh;
+}
+
+#naam a {
+  text-decoration: none;
+  color: #DC143C;
+}
+
+
 .menu img{
   float: right;
   padding-left: 3vw;
