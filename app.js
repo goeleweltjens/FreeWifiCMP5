@@ -34,9 +34,9 @@ app.get('/data',(req,res) => {
     res.render('help');
     });
 
-  app.get('/locaties',(req,res) => {
+  app.get('/locaties/:id',(req,res) => {
     res.render('locaties',{
-      wifi: data_wifi
+      wifi: data_wifi[req.params.id]
     });
       });
 
