@@ -53,9 +53,7 @@
       if("<%=wifi[i].attributes.GEMEENTE %>" == "Borgerhout") {
         pin = pinPurple;
       }
-      if("<%=wifi[i].attributes.GEMEENTE %>" == "Borgerhout") {
-        pin = pinlocatie;
-      }
+
 
 
       L.marker([<%=wifi[i].geometry.y %>, <%=wifi[i].geometry.x %>], {icon: pin}).addTo(mymap)
