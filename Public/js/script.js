@@ -6,6 +6,8 @@
    zoom: 14
  });
 
+
+
 /*
  * map activeren door een achtergrond toe te voegen
  */
@@ -61,4 +63,11 @@ var pinGreen = L.icon({
 });
 
 
-mymap.locate({setView: true, maxZoom: 17} );
+var pinlocatie = L.icon({
+    iconUrl: '../images/locatie.png',
+    iconSize:     [65,65],
+});
+
+
+
+mymap.locate({setView: true, maxZoom: 17}, {icon: pinlocatie} ).addTo(mymap);
