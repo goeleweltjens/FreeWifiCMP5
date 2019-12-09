@@ -75,7 +75,7 @@ app.get('/data',(req,res) => {
       res.render('account');
         });
 
-let port = env.process.PORT || 3000;
+let port = process.env.PORT || 3000;
 app.listen(port, function() {
   console.log('Node luistert op poort {port}');
 });
