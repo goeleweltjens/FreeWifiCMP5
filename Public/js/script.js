@@ -7,7 +7,6 @@
  });
 
 
-
 /*
  * map activeren door een achtergrond toe te voegen
  */

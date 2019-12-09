@@ -1,5 +1,5 @@
 html {
-  background-color: #DC143C;
+  background-color: #d31b33;
   font-family: helvetica;
 }
 body {
@@ -12,7 +12,9 @@ body {
   height: 100%;
   position: relative;
 }
-
+nav {
+  margin-top: 12vh;
+}
 
 nav div{
   font-size: 15vh;
@@ -31,7 +33,7 @@ nav div{
 }
 
 nav a{
-  color: #DC143C;
+  color: #d31b33;
   text-decoration: none;
 }
 
@@ -40,7 +42,7 @@ nav a{
   width: 50vw;
   background-color: white;
   border-radius: 100px;
-  color:#DC143C;
+  color:#d31b33;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3vh;
@@ -52,7 +54,7 @@ nav a{
 
 #aanmelden a {
   text-decoration: none;
-  color: #DC143C;
+  color: #d31b33;
 }
 
 #naam {
@@ -60,7 +62,7 @@ nav a{
   width: 50vw;
   background-color: white;
   border-radius: 100px;
-  color:#DC143C;
+  color:#d31b33;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 3vh;
@@ -72,7 +74,7 @@ nav a{
 
 #naam a {
   text-decoration: none;
-  color: #DC143C;
+  color: #d31b33;
 }
 
 
@@ -104,7 +106,7 @@ li {
 }
 
 h2{
-  color:#DC143C;
+  color:#d31b33;
 }
 
 #logo img{
@@ -150,8 +152,12 @@ input {
   border: 20px solid white;
   border-radius: 50px;
   margin-left: -1.3vh;
+}
 
 
+
+.detailmap {
+  height: 10vh;
 }
 
 .locatie {
@@ -175,7 +181,9 @@ input {
 
 .locatie a{
   text-decoration: none;
-  color:#DC143C;
+  color:#d31b33;
+
+
 
 }
 
@@ -194,13 +202,19 @@ h3{
 }
 
 .help {
-  color: white;
+  color:#d31b33;
   font-size: 1.6vh;
 }
 
 .instellingen {
-  color: white;
+  color:#d31b33;
   font-size: 1.6vh;
+
+}
+
+.detail {
+  color: white;
+  font-size: 2.5vh;
 
 }
 

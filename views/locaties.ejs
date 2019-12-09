@@ -1,11 +1,11 @@
 <% include header %>
 
-
+<h2>A</h2>
+<h3><%=wifi.attributes.LOCATIE%></h3>
 
 <!-- aanpassing om lijst internetspots te tonen -->
 <div class="detail">
 
-     <%=wifi.attributes.LOCATIE%><br>
      <%=wifi.attributes.STRAAT%>
      <%=wifi.attributes.HUISNR%><br>
      <%=wifi.attributes.POSTCODE%><br>
@@ -13,3 +13,52 @@
 
 
 </div>
+
+<div class="detailmap">
+<div id="mapje"></div>
+<script src="/leaflet/leaflet.js"></script>
+<script src="/leaflet/leaflet-providers.js"></script>
+<script src="/js/script.js"></script>
+<script>
+  <% for(var i=0; i < wifi.length; i++){ %>
+      // dit is voor het adres in de pop up weer te geven
+      var pin = pinDefault;
+      if("<%=wifi.attributes.GEMEENTE %>" == "Antwerpen") {
+        pin = pinRed;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Berchem") {
+        pin = pinBlue;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Deurne") {
+        pin = pinYellow;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Ekeren") {
+        pin = pinBordeaux;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Merksem") {
+        pin = pinGreen;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Berendrecht") {
+        pin = pinKaki;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Wilrijk") {
+        pin = pinLila;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Hoboken") {
+        pin = pinOrange;
+      }
+      if("<%=wifi.attributes.GEMEENTE %>" == "Borgerhout") {
+        pin = pinPurple;
+      }
+
+      L.marker([<%=wifi.geometry.y %>, <%=wifi.geometry.x %>], {icon: pin}).addTo(mymap);
+
+
+
+
+
+  <% }%>
+</script>
+</div>
+
+<% include footer %>
