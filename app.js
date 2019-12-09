@@ -16,7 +16,7 @@ var app = express();
 app.set("views", path.resolve(__dirname, "views"));
 app.set("view engine", "ejs");
 
-app.use(express.static('public'));
+app.use(express.static('Public'));
 
 let data_wifi;
 
