@@ -114,6 +114,7 @@ h2{
 #logobegin {
 
   width: 20vw;
+  margin-left: 4vw;
 }
 
 
@@ -143,4 +144,28 @@ input {
   height: 120vh;
   padding: 0;
   margin: -6vh;
+}
+
+.locatie {
+  padding: 2vh;
+  width: 40%;
+  margin-bottom: 1vh;
+  background-color: white;
+  border-radius: 150px;
+  font-weight: bold;
+  font-size: 2vh;
+  text-align: center;
+
+}
+
+.lijst {
+  margin-top: 10vh;
+  display: grid;
+}
+
+
+.locatie a{
+  text-decoration: none;
+  color:#DC143C;
+
 }

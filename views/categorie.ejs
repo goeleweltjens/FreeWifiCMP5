@@ -1,7 +1,12 @@
 <% include header %>
 
-<h2> help </h2>
+<h2>A</h2>
 
+
+<div class="lijst">
 <% for(var i=0; i < wifi.length; i++) { %>
-<li><a href="locaties/<%=i%>"><%=wifi[i].attributes.LOCATIE %></a></li>
+<li><div class="locatie"><a href="locaties/<%=i%>"><%=wifi[i].attributes.LOCATIE %></a></div>
+</li>
 <% } %>
+
+</div>
