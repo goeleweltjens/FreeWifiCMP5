@@ -75,9 +75,9 @@ app.get('/data',(req,res) => {
       res.render('account');
         });
 
-
-app.listen(3000, function() {
-  console.log('Node luistert op poort 3000');
+let port = env.process.PORT || 3000;
+app.listen(port, function() {
+  console.log('Node luistert op poort {port}');
 });
 
 console.log("Webserver draait");
