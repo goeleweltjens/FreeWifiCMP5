@@ -143,10 +143,15 @@ input {
 
 * {margin: 0; padding: 0;}
 #mapje {
-  width: 120%;
-  height: 120vh;
+  width: 100%;
+  height: 82vh;
   padding: 0;
-  margin: -6vh;
+  margin-top: 10vh;
+  border: 20px solid white;
+  border-radius: 50px;
+  margin-left: -1.3vh;
+
+
 }
 
 .locatie {
@@ -178,9 +183,22 @@ h3{
   font-size: 3vh;
   color: white;
   margin: 3vh;
-  margin-top: 20vh;
 }
 
 .menu {
   position: absolute;
+}
+
+.help {
+  color: white;
+  font-size: 1.6vh;
+}
+
+.instellingen {
+  color: white;
+  font-size: 1.6vh;
+}
+
+.header {
+  position: fixed;
 }
