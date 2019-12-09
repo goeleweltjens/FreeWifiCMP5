@@ -182,11 +182,15 @@ input {
 h3{
   font-size: 3vh;
   color: white;
-  margin: 3vh;
+  margin-top: 5vh;
+  text-transform: uppercase;
+  margin-bottom: 5vh;
+
 }
 
 .menu {
-  position: absolute;
+  position: right;
+  display: block;
 }
 
 .help {
@@ -197,8 +201,9 @@ h3{
 .instellingen {
   color: white;
   font-size: 1.6vh;
+
 }
 
 .header {
-  position: fixed;
+  position: right;
 }
