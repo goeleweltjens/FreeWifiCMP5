@@ -150,12 +150,10 @@ input {
   margin-left: -1.3vh;
 }
 
-.detail {
-  margin-bottom: 5vh;
-}
 
-.detailmap {
-  height: 10vh;
+
+.detailmap #mapje {
+  height: 50vh;
 }
 
 .locatie {
@@ -246,6 +244,8 @@ h3{
 .detail {
   color: white;
   font-size: 2.5vh;
+  margin-bottom: 5vh;
+
 
 }
 
