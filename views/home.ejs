@@ -50,7 +50,7 @@
 
 
       L.marker([<%=wifi[i].geometry.y %>, <%=wifi[i].geometry.x %>], {icon: pin}).addTo(mymap)
-    .bindPopup('<%=wifi[i].attributes.STRAAT %>, <%=wifi[i].attributes.HUISNR,  %>, <%=wifi[i].attributes.GEMEENTE %>')
+    .bindPopup('<%=wifi[i].attributes.LOCATIE%>, <%=wifi[i].attributes.STRAAT %>, <%=wifi[i].attributes.HUISNR%>, <%=wifi[i].attributes.GEMEENTE %>')
     .openPopup();
 
 
