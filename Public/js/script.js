@@ -64,8 +64,10 @@ var pinGreen = L.icon({
 
 var pinlocatie = L.icon({
     iconUrl: '../images/locatie.png',
-    iconSize:     [65,65],
+    iconSize:     [80, 80],
 });
+
+L.marker([51.2301671, 4.41612712493024], {icon: pinlocatie}).addTo(mymap);
 
 
 

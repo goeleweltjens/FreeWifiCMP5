@@ -24,14 +24,10 @@
 <script src="/js/script.js"></script>
 <script>
   <% for(var i=0; i < wifi.length; i++){ %>
-      // dit is voor het adres in de pop up weer te geven
-      var pin = pinDefault;
+      var pin = pinGreen;
 
 
-      L.marker([<%=wifi.geometry.y %>, <%=wifi.geometry.x %>], {icon: pin}).addTo(mymap);
-
-
-
+      L.marker([<%=wifi.geometry.y %>, <%=wifi.geometry.x %>]).addTo(mymap);
 
 
   <% }%>
