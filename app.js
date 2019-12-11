@@ -1,11 +1,3 @@
-/*
- * npm init
- * npm install express --save
- * npm install request --save
- * npm install ejs --save
- *
- * node(mon) index.js
- */
 
 var express = require('express');
 var request = require('request');
@@ -95,9 +87,6 @@ request('https://geodata.antwerpen.be/arcgissql/rest/services/P_Portal/portal_pu
         console.log("naam: " + data_wifi[i].attributes.STRAAT);
         console.log("naam: " + data_wifi[i].attributes.HUISNR);
         console.log("naam: " + data_wifi[i].attributes.GEMEENTE);
-
-
-
     }
 
   }
