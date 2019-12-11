@@ -24,16 +24,12 @@ app.get('/home',(req,res) => {
   });
 });
 
-app.get('/data',(req,res) => {
-  res.render('data');
-  });
-
   app.get('/help',(req,res) => {
     res.render('help');
     });
 
-  app.get('/locaties/:id',(req,res) => {
-    res.render('locaties',{
+  app.get('/detail/:id',(req,res) => {
+    res.render('detail',{
       wifi: data_wifi[req.params.id]
     });
       });
@@ -55,17 +51,14 @@ app.get('/data',(req,res) => {
           res.render('aanmeldformulier');
           });
 
-        app.get('/categorie',(req,res) => {
-          res.render('categorie',{
+        app.get('/locaties',(req,res) => {
+          res.render('locaties',{
             wifi: data_wifi
           });
             });
 
 
 
-    app.get('/account',(req,res) => {
-      res.render('account');
-        });
 
 let port = process.env.PORT || 3000;
 app.listen(port, function() {
