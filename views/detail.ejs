@@ -1,0 +1,36 @@
+<% include header %>
+
+<h2>A</h2>
+
+<a class="terug"href="/locaties"><img src="/images/terugoranje.png" alt="terug"style="height:100px;"></a>
+
+<h3><%=wifi.attributes.LOCATIE%></h3>
+
+<div class="detail">
+
+     <%=wifi.attributes.STRAAT%>
+     <%=wifi.attributes.HUISNR%><br>
+     <%=wifi.attributes.POSTCODE%><br>
+     <%=wifi.attributes.GEMEENTE%><br>
+
+
+</div>
+
+<div class="detailmap">
+<div id="mapje"></div>
+<script src="/leaflet/leaflet.js"></script>
+<script src="/leaflet/leaflet-providers.js"></script>
+<script src="/js/script.js"></script>
+<script>
+  <% for(var i=0; i < wifi.length; i++){ %>
+      var pin = pinGreen;
+
+
+      L.marker([<%=wifi.geometry.y %>, <%=wifi.geometry.x %>]).addTo(mymap);
+
+
+  <% }%>
+</script>
+</div>
+
+<% include footer %>
